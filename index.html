@@ -21,9 +21,8 @@
 
         .card {
             margin: 23vh auto;
-            width: 100%; /* Make it responsive */
-            max-width: 600px; /* Prevent it from growing too wide */
-            height: auto;
+            width: 600px; /* Default width for desktop */
+            height: 400px;
             position: relative;
             transform-style: preserve-3d;
             transform: rotateY(0deg);
@@ -99,11 +98,12 @@
             background-color: #7A23CC;
         }
 
+        /* Media query for tablets and small screens (768px) */
         @media (max-width: 768px) {
             .card {
-                width: 80%; /* Adjusted for mobile */
+                width: 90%;
                 height: auto;
-                margin: 5vh auto; /* Adjust margin to make it fit better */
+                margin: 10vh auto;
             }
         
             .card-back p {
@@ -119,12 +119,13 @@
                 padding: 8px 16px;
             }
         }
-        
+
+        /* Media query for mobile (480px and below) */
         @media (max-width: 480px) {
             .card {
                 width: 90%; /* Keep width to 90% for very small screens */
                 height: auto;
-                margin: 5vh auto; /* Adjust margin for very small screens */
+                margin: 0 auto; /* Adjust margin for very small screens */
             }
         
             .card-back p {
