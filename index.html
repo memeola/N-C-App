@@ -21,15 +21,16 @@
 
         .card {
             margin: 23vh auto;
-            width: 600px;
-            height: 400px;
+            width: 100%; /* Make it responsive */
+            max-width: 600px; /* Prevent it from growing too wide */
+            height: auto;
             position: relative;
             transform-style: preserve-3d;
             transform: rotateY(0deg);
             transition: transform 0.4s;
-            perspective: 1000px; /* Adds depth */
-            will-change: transform; /* Optimizes for animations */
-            cursor: pointer; /* Indicates interactivity */
+            perspective: 1000px;
+            will-change: transform;
+            cursor: pointer;
         }
 
         .card.is-flipped {
