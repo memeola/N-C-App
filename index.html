@@ -104,14 +104,15 @@
                 width: 90%;
                 height: auto;
                 margin: 10vh auto;
+                overflow: hidden;  /* Prevent overflow */
             }
         
             .card-back p {
-                font-size: 14pt; /* Adjust for smaller screens */
+                font-size: 14pt;
             }
         
             .card-front img {
-                max-width: 100%; /* Ensure image takes up the available space */
+                max-width: 100%;
             }
         
             .copy-button {
@@ -119,21 +120,22 @@
                 padding: 8px 16px;
             }
         }
-
+        
         /* Media query for mobile (480px and below) */
         @media (max-width: 480px) {
             .card {
-                width: 90%; /* Keep width to 90% for very small screens */
+                width: 90%;
                 height: auto;
-                margin: 0 auto; /* Adjust margin for very small screens */
+                margin: 0 auto;
+                overflow: hidden; /* Prevent overflow */
             }
         
             .card-back p {
-                font-size: 12pt; /* Further adjust font size for small screens */
+                font-size: 12pt;
             }
         
             .card-front img {
-                max-width: 100%; /* Ensure image is responsive */
+                max-width: 100%;
             }
         
             .copy-button {
