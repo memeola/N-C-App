@@ -100,43 +100,46 @@
 
         @media (max-width: 768px) {
             .card {
-                width: 80%;
+                width: 90%; /* Increase width to 90% of the screen */
                 height: auto;
+                margin: 0 auto; /* Center the card */
             }
-
+        
             .card-back p {
                 font-size: 14pt; /* Adjust for smaller screens */
             }
-
+        
             .card-front img {
-                max-width: 70%;
+                max-width: 100%; /* Ensure image takes up the available space */
             }
-
+        
             .copy-button {
                 font-size: 12px;
                 padding: 8px 16px;
             }
         }
-
+        
         @media (max-width: 480px) {
             .card {
-                width: 90%;
+                width: 90%; /* Keep width to 90% for very small screens */
                 height: auto;
+                margin: 0 auto; /* Center the card */
             }
-
+        
             .card-back p {
-                font-size: 12pt; /* Further adjust for very small screens */
+                font-size: 12pt; /* Further adjust font size for small screens */
             }
-
+        
             .card-front img {
-                max-width: 80%;
+                max-width: 100%; /* Ensure image is responsive */
             }
-
+        
             .copy-button {
                 font-size: 10px;
                 padding: 6px 12px;
             }
         }
+
     </style>
 </head>
 <body>
